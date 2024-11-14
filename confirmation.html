@@ -38,7 +38,7 @@
             font-weight: bold;           /* Bold text */
         }
 
-            /* Custom paragraph styling */
+        /* Custom paragraph styling */
         p {
             font-family: 'Roboto Condensed', sans-serif !important;  /* Forces font family */
             font-size: 18px !important;                             /* Forces font size */
@@ -47,6 +47,30 @@
             margin: 20px 0;                                         /* Space above and below the paragraph */
         }
 
+        /* Styling for the Back to Inbox Button */
+        .back-to-inbox {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d9534f; /* WebDE blue background */
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: -40rem;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-inbox:hover {
+            background-color: #f4d50b; /* Darker blue on hover */
+        }
+
+        .back-to-inbox img {
+            width: 20px; /* Set the width of the inbox icon */
+            height: 20px; /* Set the height of the inbox icon */
+            margin-right: 8px; /* Space between icon and text */
+        }
     </style>
 </head>
 <body>
@@ -63,7 +87,7 @@
                 <h1>Erledigt!</h1>
                 <!-- Image: Scaled and Centered -->
                 <img src="check.png" alt="Checkmark" class="check-image">
-                <p>Wir haben Ihre Bestätigung zur Stornierung der Kontolöschung erfolgreich verarbeitet. Wir freuen uns, dass Sie sich entschieden haben, bei uns zu bleiben. Wenn wir etwas tun können, um Ihre Erfahrung zu verbessern, zögern Sie bitte nicht, uns dies mitzuteilen.</p>
+                <p>Ihre Bestätigung zur Stornierung der Kontolöschung wird derzeit bearbeitet. Unser Team arbeitet mit Hochdruck daran, sicherzustellen, dass alles reibungslos verläuft. Wir freuen uns, dass Sie sich entschieden haben, bei uns zu bleiben. Falls weitere Schritte erforderlich sind, werden wir uns umgehend bei Ihnen melden.</p>
                 
                 <div class="captcha-wrapper">
                     <div class="captcha-container">
@@ -73,6 +97,11 @@
                     </div>
                 </div>   
             </form>
+
+            <!-- Back to Inbox Button -->
+            <a href="/inbox" class="back-to-inbox">
+                <img src="inbox.svg" alt="Inbox Icon">Posteingang
+            </a>
 
             <!-- Powered by WEB.DE Footer -->
             <div class="powered-by">
